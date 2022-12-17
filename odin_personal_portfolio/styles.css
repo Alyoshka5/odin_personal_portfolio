@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap'); /* Noto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); /* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Open Sans */
+
+:root {
+    --primary-color: #042541;
+    --header-font: 'Lora', serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 3%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-diagonal {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150%;
+    box-shadow: 0 5px 8px #cecece;
+    transform: rotate(-14deg) translate(-10%, -45%);
+    z-index: -1;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .image {
+    position: relative;
+    background-image: url("images/me1.png");
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4.4em;
+    font-weight: normal;
+    font-family: var(--header-font);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.494);
+    margin: 15px;
+}
+
+header .container .content {
+    background-color: #fff;
+    width: 50%;
+    height: 500px;
+    padding: 25px;
+    box-shadow: 3px 3px 8px #0000003c;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h2 {
+    font-size: 3.3rem;
+    font-family: var(--header-font);
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+header p {
+    color: #575757;
+    font-size: 1.35rem;
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+
+header .icons {
+    justify-self: end;
+    display: flex;
+    gap: 15px;
+}
+
+/* PROJECTS */
+
+.my-work {
+    margin: 10% 0 5%;
+}
+
+.project {
+    max-width: 400px;
+    box-shadow: 0 0 15px #00000028;
+}
+
+.project .cover-image {
+    max-width: 400px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.project .info {
+    font-family: var(--header-font);
+    height: 190px;
+    padding: 20px;   
+}
+
+
+.project .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.project .links img {
+    width: 30px;
+    margin: 0 3px;
+}
+
+.project .description {
+    color: #575757;
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+}
+
+.my-work .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 50px;
+    justify-content: center;
+}
+
+.my-work h2 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: -30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer .content > * {
+    margin: 35px 0;
+}
+
+footer .content {
+    /* margin-right: 100px; */
+    max-width: 35%;
+}
+
+footer .info {
+    font-size: 1.6rem;
+    font-family: var(--paragraph-font);
+}
+
+.phone-container, .email-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-container p, .email-container p {
+    margin: 15px;
+}
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+}
+
+footer .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-img {
+    max-width: 800px;
+}
+
